@@ -1,0 +1,116 @@
+munsah@lin80025518 MINGW64 ~/Desktop
+$ git --version
+git version 2.34.1.windows.1
+
+munsah@lin80025518 MINGW64 ~/Desktop
+$ git help config
+
+munsah@lin80025518 MINGW64 ~/Desktop
+$ mkdir CovidHelp
+
+munsah@lin80025518 MINGW64 ~/Desktop
+$ cd CovidHelp/
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp
+$ git init
+Initialized empty Git repository in C:/Users/MUNSAH/Desktop/CovidHelp/.git/
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        admin.py
+        models.py
+        urls.py
+        views.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git add admin.py
+warning: LF will be replaced by CRLF in admin.py.
+The file will have its original line endings in your working directory
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git commit -m "adding a admin.py file"
+[master (root-commit) ab3644a] adding a admin.py file
+ 1 file changed, 50 insertions(+)
+ create mode 100644 admin.py
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git config --global user.username munnasah1808
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git remote add origin https://github.com/munnasah1808/CovidHelpApp.git
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git push origin master
+
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git push origin master
+fatal: helper error (-1): User cancelled dialog.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/munnasah1808/CovidHelpApp.git/'
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 700 bytes | 233.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/munnasah1808/CovidHelpApp.git
+ * [new branch]      master -> master
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        models.py
+        urls.py
+        views.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git add models.py
+warning: LF will be replaced by CRLF in models.py.
+The file will have its original line endings in your working directory
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git commit -m "Adding a models.py file"
+[master b3e59ba] Adding a models.py file
+ 1 file changed, 51 insertions(+)
+ create mode 100644 models.py
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        urls.py
+        views.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 720 bytes | 240.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/munnasah1808/CovidHelpApp.git
+   ab3644a..b3e59ba  master -> master
+
+munsah@lin80025518 MINGW64 ~/Desktop/CovidHelp (master)
+$
